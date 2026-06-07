@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SILVA SOFA | Premium Sofa & Furniture Solutions</title>
+
+<meta name="description" content="SILVA SOFA - Premium Sofa Sets and Custom Furniture in Kadawatha, Sri Lanka. Contact 076 357 2224.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+:root{
+    --gold:#c89b6d;
+    --gold-dark:#a77d4d;
+    --dark:#1f1a17;
+    --light:#f8f5f0;
+    --white:#ffffff;
+}
+
+body{
+    background:var(--light);
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#fff;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    padding:18px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:var(--gold);
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+nav ul a:hover{
+    color:var(--gold);
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--gold);
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:var(--gold-dark);
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:40px;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* PRODUCTS */
+
+.products{
+    background:white;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-10px);
+}
+
+.product img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:var(--gold);
+    font-size:22px;
+    font-weight:700;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about h2{
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.about p{
+    line-height:1.8;
+}
+
+/* CONTACT */
+
+.contact{
+    background:white;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.contact-form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:var(--gold);
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.contact-info{
+    background:var(--light);
+    padding:30px;
+    border-radius:15px;
+}
+
+.contact-info h3{
+    margin-bottom:20px;
+}
+
+/* MAP */
+
+.map iframe{
+    width:100%;
+    height:450px;
+    border:0;
+    border-radius:15px;
+}
+
+/* FOOTER */
+
+footer{
+    background:var(--dark);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+    font-size:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:45px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.about,
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+
+<div class="logo">SILVA SOFA</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>SILVA SOFA</h1>
+
+<p>
+Premium Sofa Sets, Custom Furniture & Luxury Living Room Solutions
+in Kadawatha, Sri Lanka.
+</p>
+
+<a href="#products" class="btn">
+Explore Collection
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Why Choose Us</h2>
+</div>
+
+<div class="features">
+
+<div class="feature">
+<h3>Premium Quality</h3>
+<p>High quality materials with durable craftsmanship.</p>
+</div>
+
+<div class="feature">
+<h3>Custom Designs</h3>
+<p>Tailor-made sofa solutions to match your interior.</p>
+</div>
+
+<div class="feature">
+<h3>Fast Delivery</h3>
+<p>Reliable delivery service across Sri Lanka.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="products" id="products">
+
+<div class="section-title">
+<h2>Featured Sofas</h2>
+</div>
+
+<div class="product-grid">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+<div class="product-info">
+<h3>Luxury L-Shape Sofa</h3>
+<div class="price">Rs.145,000</div>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80">
+<div class="product-info">
+<h3>Premium Sofa Set</h3>
+<div class="price">Rs.185,000</div>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=801&q=80">
+<div class="product-info">
+<h3>Modern Recliner Sofa</h3>
+<div class="price">Rs.95,000</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=1200&q=80">
+
+<div>
+
+<h2>About SILVA SOFA</h2>
+
+<p>
+SILVA SOFA is a trusted furniture manufacturer and supplier located in
+Kadawatha, Sri Lanka. We specialize in premium sofa sets, custom-made
+furniture, and modern interior solutions.
+
+Our mission is to provide elegant, comfortable, and long-lasting furniture
+that transforms every home into a beautiful living space.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<div class="section-title">
+<h2>Contact Us</h2>
+</div>
+
+<div class="contact-container">
+
+<div class="contact-form">
+
+<form id="contactForm">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button type="submit">
+Send Inquiry
+</button>
+
+</form>
+
+</div>
+
+<div class="contact-info">
+
+<h3>SILVA SOFA</h3>
+
+<p><strong>📞 Phone:</strong> 076 357 2224</p>
+<br>
+
+<p><strong>📍 Location:</strong> Kadawatha, Sri Lanka</p>
+<br>
+
+<p><strong>🕒 Opening Hours:</strong></p>
+<p>Monday - Saturday</p>
+<p>8:00 AM - 6:00 PM</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="map">
+
+<div class="section-title">
+<h2>Our Location</h2>
+</div>
+
+<iframe
+src="https://maps.google.com/maps?q=Kadawatha%20Sri%20Lanka&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+<footer>
+
+<h3>SILVA SOFA</h3>
+
+<br>
+
+<p>Premium Sofa Manufacturer & Furniture Solutions</p>
+
+<br>
+
+<p>📞 076 357 2224</p>
+
+<p>📍 Kadawatha, Sri Lanka</p>
+
+<br>
+
+<p>© 2025 SILVA SOFA. All Rights Reserved.</p>
+
+</footer>
+
+<a href="https://wa.me/94763572224" class="whatsapp" target="_blank">
+💬
+</a>
+
+<script>
+
+document
+.getElementById("contactForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Thank you for contacting SILVA SOFA. We will contact you soon.");
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
